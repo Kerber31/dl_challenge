@@ -55,7 +55,7 @@ class TestRandomModel(unittest.TestCase):
         self.assertEqual(len(output), len(self.input_imgs_a))
         self.assertEqual(len(self.input_imgs_b), len(self.input_imgs_a))
         self.assertEqual(type(output), list)
-
+        
         # Make sure that that predictions are floats and not other things
         self.assertEqual(type(float(output[0])), float)
         
@@ -63,3 +63,6 @@ class TestRandomModel(unittest.TestCase):
         for out in output:
             self.assertGreaterEqual(out, -10)
             self.assertLessEqual(out, 100)
+
+if __name__ == '__main__':
+    unittest.main()
