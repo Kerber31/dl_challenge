@@ -2,3 +2,4 @@ tqdm==4.58.0
 pytest
 Pillow
 tensorflow-gpu==2.6.0
+numpy==1.19.5
